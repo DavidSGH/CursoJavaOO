@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="NocheClase06WebBrowser.jnlp">
+  <information>
+    <title>NocheClase06WebBrowser</title>
+    <vendor>DOCENTE AULA1</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="NocheClase06WebBrowser.jar" size="3265" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="NocheClase06WebBrowser" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="nocheclase06webbrowser.NocheClase06WebBrowser"  name="NocheClase06WebBrowser" />
+  <update check="always"/>
+</jnlp>
