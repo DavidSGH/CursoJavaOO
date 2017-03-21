@@ -1,0 +1,15 @@
+Thu Mar 09 21:34:23 ART 2017;aula1/192.168.56.1;DOCENTE AULA1;java.sql.SQLException: Generated keys not requested. You need to specify Statement.RETURN_GENERATED_KEYS to Statement.executeUpdate() or Connection.prepareStatement().
+Thu Mar 09 21:34:29 ART 2017;aula1/192.168.56.1;DOCENTE AULA1;java.sql.SQLException: Generated keys not requested. You need to specify Statement.RETURN_GENERATED_KEYS to Statement.executeUpdate() or Connection.prepareStatement().
+Thu Mar 09 21:35:58 ART 2017;aula1/192.168.56.1;DOCENTE AULA1;java.sql.SQLException: Generated keys not requested. You need to specify Statement.RETURN_GENERATED_KEYS to Statement.executeUpdate() or Connection.prepareStatement().
+Thu Mar 09 22:08:28 ART 2017;aula1/192.168.56.1;DOCENTE AULA1;java.lang.NullPointerException
+Thu Mar 09 22:09:22 ART 2017;aula1/192.168.56.1;DOCENTE AULA1;java.lang.NullPointerException
+Thu Mar 09 22:09:30 ART 2017;aula1/192.168.56.1;DOCENTE AULA1;java.lang.NullPointerException
+Fri Mar 10 19:45:28 ART 2017;aula1/192.168.56.1;DOCENTE AULA1;com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+Tue Mar 14 21:51:10 ART 2017;teclast/192.168.1.116;pc;java.lang.ClassNotFoundException: ar.com.centro8.java.entities.alumnos
+Tue Mar 14 22:03:58 ART 2017;teclast/192.168.1.116;pc;java.lang.ClassNotFoundException: ar.com.centro8.java.entities.alumnos
+Tue Mar 14 22:13:23 ART 2017;teclast/192.168.1.116;pc;java.lang.ClassNotFoundException: ar.com.centro8.java.entities.alumnos
+Thu Mar 16 19:09:00 ART 2017;teclast/192.168.1.118;pc;java.lang.ClassNotFoundException: ar.com.centro8.java.entities.alumnos
+Thu Mar 16 19:18:13 ART 2017;teclast/127.0.0.1;pc;java.lang.ClassNotFoundException: ar.com.centro8.java.entities.alumnos
+Thu Mar 16 19:24:09 ART 2017;teclast/127.0.0.1;pc;java.lang.ClassNotFoundException: ar.com.centro8.java.entities.alumnos
