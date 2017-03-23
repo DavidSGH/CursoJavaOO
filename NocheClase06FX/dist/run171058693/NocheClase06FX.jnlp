@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="NocheClase06FX.jnlp">
+  <information>
+    <title>NocheClase06FX</title>
+    <vendor>pc</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="NocheClase06FX.jar" size="4193" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="NocheClase06FX" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="nocheclase05fx.NocheClase05FX"  name="NocheClase06FX" />
+  <update check="always"/>
+</jnlp>
