@@ -43,6 +43,7 @@ public class NocheClase08_v2 {
         System.out.println(ct1.getId());
         System.out.println(ct1.getName());
         System.out.println(ct1.getPriority());
+        System.out.println(ct1.getState());
         System.out.println(ct1.isAlive());
         System.out.println(ct1.isDaemon());
         System.out.println(ct1.isInterrupted());
@@ -52,6 +53,14 @@ public class NocheClase08_v2 {
         ct2.setPriority(Thread.NORM_PRIORITY);
         ct3.setPriority(Thread.MIN_PRIORITY);
         
+        /*
+        Ciclo de vida de un hilo
+        
+        NEW     RUNNabLE    NOT RUNNABLE                TERMINATED(dead)
+                .start()    BLOCKED bloqueo x IO        muerte natural
+                            WAITING .wait()             asesinato   .stop() deprecated()
+                            TIME WAITING .sleep()
+        */
         
         // Metodo start()
         ct1.start();
@@ -59,6 +68,54 @@ public class NocheClase08_v2 {
         ct3.start();
         ct4.start();
         
+        ct1.stop();
+        
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(NocheClase08_v2.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        System.out.println(ct1.getState());
+        System.out.println("Fin del programa");
+        
+        class ClaseRunnable implements Runnable{
+            private String descripcion;
+            
+            public ClaseRunnable(String descripcion){
+                this.descripcion = descripcion;
+            }
+            
+            @Override
+            public void run(){
+                for (int i=0;i<=10;i++){
+                    System.out.println(descripcion+": "+i);
+                    dormir(20);
+                }
+            }
+            
+            private void dormir(int t){
+                try {
+                    Thread.sleep(t);
+                } catch (InterruptedException ex){
+                    Logger.getLogger(NocheClase08_v2.class.getName());
+                }
+            }
+        } // End Class
+        
+        ClaseRunnable cr1 = new ClaseRunnable("Hilo 1");
+        ClaseRunnable cr2 = new ClaseRunnable("Hilo 2");
+        ClaseRunnable cr3 = new ClaseRunnable("Hilo 3");
+        ClaseRunnable cr4 = new ClaseRunnable("Hilo 4");
+        
+        Thread t1 = new Thread(cr1);
+        Thread t2 = new Thread(cr2);
+        Thread t3 = new Thread(cr3);
+        Thread t4 = new Thread(cr4);
+        
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
         System.out.println("Fin del programa");
     }
     
