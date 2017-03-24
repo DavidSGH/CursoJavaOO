@@ -1,2 +1,4 @@
 Tue Mar 21 22:01:20 ART 2017;teclast/192.168.1.130;pc;java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
 Tue Mar 21 22:06:38 ART 2017;teclast/192.168.1.130;pc;java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+Thu Mar 23 19:31:10 ART 2017;PRAGMANB531/192.168.1.120;dsgonzalez;java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+Thu Mar 23 19:31:14 ART 2017;PRAGMANB531/192.168.1.120;dsgonzalez;java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)

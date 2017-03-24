@@ -3,6 +3,7 @@ package ar.com.centro8.java.gui;
 
 import ar.com.centro8.curso.java.entities.alumnos;
 import ar.com.centro8.curso.java.repositories.GenericR;
+import ar.com.centro8.curso.java.util.FxTable;
 import ar.com.centro8.curso.java.util.Validator;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -10,7 +11,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.SortEvent;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 
 
 public class FXMLAlumnosController implements Initializable {
@@ -23,11 +26,20 @@ public class FXMLAlumnosController implements Initializable {
     private TextField txtEdad;
     @FXML
     private TextField txtCurso;
+    @FXML
+    private TableView<alumnos> tblAlumnos;
+    @FXML
+    private TextField txtBuscarApellido;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
     }    
+    
+    private void cargar(){
+        String clax = "ar.com.centro8.curso.java.entities.alumnos";
+        new FxTable().cargar(new GenericR().getAll(clax), tblAlumnos);
+    }
 
     private boolean validar(){
         //Validator v = new Validator(txtNombre,"nombre");
@@ -51,9 +63,7 @@ public class FXMLAlumnosController implements Initializable {
                     Integer.parseInt(txtCurso.getText())
             );
             gr.save(a);
-            
-            
-            
+            cargar();           
             limpiar();
         }
     }
@@ -69,6 +79,14 @@ public class FXMLAlumnosController implements Initializable {
 
     @FXML
     private void tblAlumnos(SortEvent<?> event) {
+    }
+
+    @FXML
+    private void buscar(KeyEvent event) {
+        String clax = "ar.com.centro8.java.entities.alumnos";
+        String filtro = "apellido like ´%"+txtBuscarApellido.getText()+"%´";
+        new FxTable().cargar(new GenericR().get(clax,filtro), tblAlumnos);
+        
     }
     
 }
