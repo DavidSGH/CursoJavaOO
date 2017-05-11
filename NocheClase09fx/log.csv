@@ -1,0 +1,6 @@
+Tue Mar 28 19:27:23 ART 2017;aula1/192.168.56.1;DOCENTE AULA1;com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+Tue Mar 28 19:27:57 ART 2017;aula1/192.168.56.1;DOCENTE AULA1;com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
